@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diseño Jizra</title>
+    <script src="https://kit.fontawesome.com/1f8614daef.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="social-bar.css">
+    <meta name="theme-color" content="#000000">
+</head>
+<body class="">
+    <section class="loader">
+        <span class="loader__span"></span>
+        <span class="loader__span"></span>
+        <section class="btn jizra__logo">
+            <img loading="lazy" src="https://jizratest.eu5.org/img/diseno-jizra-logo.png" alt="Jizra Logo" class="jizra__logo__img">
+        </section>
+    </section>
+    <section class="loader__texto">
+        <span class="loader__texto__span">O</span>
+        <span class="loader__texto__span">N</span>
+        <span class="loader__texto__span"> </span>
+        <span class="loader__texto__span">L</span>
+        <span class="loader__texto__span">I</span>
+        <span class="loader__texto__span">N</span>
+        <span class="loader__texto__span">E</span>
+        <span class="loader__texto__span">.</span>
+        <span class="loader__texto__span">.</span>
+        <span class="loader__texto__span">.</span>
+    </section>
+    <script>
+        let letra = document.querySelectorAll('.loader__texto__span');
+        for(let i = 0; i < letra.length; i++){
+            letra[i].style = `animation: texto 2s ease-in-out ${0.1 * i}s infinite;`
+        }
+    </script>
+    <script src="js/btns-ondas.js"></script>
+    <script src="social-bar.js"></script>
+</body>
+</html>
