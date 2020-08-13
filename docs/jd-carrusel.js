@@ -1,6 +1,9 @@
 function jdSider(padre,item,timer){
     let carrusel = document.querySelector(padre),
         itemCarrusel = document.querySelectorAll(`.${item}`);
+    carrusel.style="position:relative; display:flex; flex-wrap: nowrap; justify-content: flex-start; overflow: hidden; width:100%";
+    itemCarrusel.forEach(item=>item.style.minWidth='100%');
+    
     const firstClone = itemCarrusel[0].cloneNode(true),
         lastClone = itemCarrusel[itemCarrusel.length -1].cloneNode(true);
 
