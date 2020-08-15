@@ -33,6 +33,13 @@ function jdSider(padre,item,timer){
         arrow.innerHTML = 'Next';
     icon = arrow.appendChild(document.createElement('i'));
         icon.setAttribute('class','fas fa-angle-double-right');
+    // >>>>> -->>>>> ----- dedo ----- <<<<<-- <<<<<
+    let contDedo = carrusel.appendChild(document.createElement('div'));
+        contDedo.setAttribute('class', 'dedo-swipe animacion');
+    let dedo = contDedo.appendChild(document.createElement('div'));
+        dedo.setAttribute('class', 'dedo');
+    let iconDedo = dedo.appendChild(document.createElement('i'));
+        iconDedo.setAttribute('class', 'fas fa-hand-point-up');
 
     // >>>>> -->>>>> ----- contador ----- <<<<<-- <<<<<
     let indexCarrusel = 1,
