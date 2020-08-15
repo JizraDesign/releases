@@ -161,8 +161,8 @@ function jdSider(padre,item,timer){
         circleItems[iCircle].classList.add('active');
     };
     setTimeout(function(){
-        document.querySelector('.dedo-swipe').classList.remove('animacion');
-        document.querySelector('.dedo-swipe').style.display='none';
+        document.querySelectorAll('.dedo-swipe').forEach(dedo=>dedo.classList.remove('animacion'));
+        document.querySelectorAll('.dedo-swipe').forEach(dedo=>dedo.style.display='none');
     },5000);
 
     function autoplay(){
