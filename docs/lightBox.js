@@ -181,7 +181,7 @@ class LightBox{
         const lightBox = document.querySelector('#jd-light-box');
         lightBox.classList.remove('active');
         setTimeout(() => {
-            document.querySelector('#jd-light-box-cont').remove();
+            document.querySelector('#jd-light-box').remove();
         },500);
     };
 
