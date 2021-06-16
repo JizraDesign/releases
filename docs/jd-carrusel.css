@@ -1,5 +1,5 @@
 /* >>>>> -->>>>> ----- cotrolls carrusel ----- <<<<<-- <<<<< */
-#jd-nav__carrusel{
+[id^="jd-nav__carrusel"]{
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -30,7 +30,8 @@
 [id^="jd-btn-next__carrusel"] i {
     margin: 0 5px;
 }
-#jd-cont__circle__carrusel{
+[id^="jd-cont__circle__carrusel"]{
+    width: calc(100% - 150px);
     height: 50px;
 }
 [class^="jd-circles__carruscel"]{
